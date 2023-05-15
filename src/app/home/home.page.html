@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      🌱EcuadorMegaDiverso
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <ion-card *ngFor="let Item of contenidos">
+      <p id="titulo">{{Item.titulo}}<br></p>
+      <p id="subtitulo">{{Item.subtitulo}}</p>
+      <p>{{Item.Descripcion}}</p>
+      <div class="image-container">
+      <img src="{{Item.imagen}}" ></div>
+    </ion-card>
+  </div>
+</ion-content>
+
